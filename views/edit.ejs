@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Edit Recipe</title>
+    <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
-    <h1>Edit Recipe</h1>
+    <h1 style= "color: brown"> Modify the Recipe for <%= food.name%></h1>
 
-    <form action="/foods/<%=index%>?_method=PUT" method="POST">
+    <form action="/foods/<%=food.id%>?_method=PUT" method="POST">
         Name: <input type="text" name="name" /><br/>
         Serving Size: <input type="text" name="servingSize" /><br/>
         Ingredient: <input type="text" name="ingredient" /><br/>

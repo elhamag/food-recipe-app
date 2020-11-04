@@ -5,15 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome Page</title>
     <link rel="stylesheet" href="/css/app.css">
-    <link rel="stylesheet" href="/css/app2.css">
 </head>
 <body>
-    <div class='main'>
-    <h1> Foods page </h1>
+	<nav class>
+          <a href="#!" class="brand-logo">Persian Food</a>
+          <ul class="right">
+            <li class="nav-item">
+                <a href="/foods/new">Create a New Persian Food</a>
+            </li>
+          </ul>
+      </nav>
 
-    <nav>
+    <div class='main'>
+    <!-- <h1> Foods page </h1>
+    <nav >
         <a href="/foods/new">Create a New Persian Food</a>
-    </nav>
+    </nav> -->
 
     <ul>
         <% for(let i=0; i<foods.length; i++) {%>
@@ -23,9 +30,9 @@
                 </a>
             </li>
 
-            <form action="/foods/<%=foods[i].id %>??_method=DELETE" method="POST">
+            <!-- <form action="/foods/<%=foods[i].id %>??_method=DELETE" method="POST">
                 <input type="submit" value="DELETE">
-            </form>
+            </form> -->
 
             <a href="/foods/<%=foods[i].id %>/edit">Edit</a>
 

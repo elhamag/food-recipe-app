@@ -1,12 +1,14 @@
 const express = require("express");
 const router = express.Router();
-const users = require("../users");
+const User = require("../models").User;
+const Food = require('../models').Food;
 
 
-// INDEX
-router.get("/", (req, res) => {
-    res.render("users/index.ejs", {
-      users: users,
+  router.get("/", (req, res) => {
+    User.findAll().then((users) => {
+      res.render("users/index.ejs", {
+        users: users,
+      });
     });
   });
 
@@ -17,11 +19,14 @@ router.get("/signup", (req, res) => {
 
 
   // POST - CREATE NEW USER FROM SIGNUP
-router.post("/", (req, res) => {
-    console.log(req.body);
-    users.push(req.body);
-    res.redirect(`/users/profile/${users.length - 1}`);
-  });
+  router.post('/', (req,res) => {
+ console.log(req.body)
+    User.create(req.body).then((newUser) => {
+      // console.log(newUser)
+        res.redirect(`/users/profile/${newUser.id}`);
+      });
+    });
+
 
   // GET LOGIN
 router.get("/login", (req, res) => {
@@ -29,36 +34,54 @@ router.get("/login", (req, res) => {
   });
   
   // POST LOGIN
-  router.post("/users/login", (req, res) => {
-    console.log(req.body);
-    let index = users.findIndex(
-      (user) =>
-        user.username === req.body.username && user.password === req.body.password
-    );
-    res.redirect(`/users/profile/${index}`);
+  router.post('/login',(req,res)=>{
+    User.findOne({where: { username: req.body.username, password: req.body.password} }).then((loginUsers) => {
+        console.log(loginUsers);
+        res.redirect(`/users/profile/${loginUsers.id}`)
+    }).catch((err) => {
+        res.redirect("/users");
+    });
   });
 
   
-  // GET USERS PROFILE
-router.get("/profile/:index", (req, res) => {
-    res.render("users/profile.ejs", {
-      user: users[req.params.index],
-      index: req.params.index,
+//Get USER PROFILE
+  router.get("/profile/:id", (req, res) => {
+    User.findByPk(req.params.id, {
+      include: [
+        {
+          model: Food,
+          attributes: ["id", "name"],
+        },
+      ],
+    }).then((userProfile) => {
+      res.render("users/profile.ejs", {
+        user: userProfile,
+      });
     });
   });
 
 
+
+
   // EDIT PROFILE
-router.put("/profile/:index", (req, res) => {
-    users[req.params.index] = req.body;
-    res.redirect(`/users/profile/${req.params.index}`);
-  });
+  router.put("/profile/:id", (req, res) => {
+    User.update(req.body, {
+          where: {
+            id: req.params.id,
+          },
+          returning: true,
+        }).then((updatedUser) => {
+          res.redirect(`/users/profile/${req.params.id}`);
+        });
+      });
+
 
   // DELETE USER
-router.delete("/:index", (req, res) => {
-    users.splice(req.params.index, 1); //remove the item from the array
-    res.redirect("/users"); //redirect back to index route
-  });
+  router.delete('/:id',(req,res)=>{
+    User.destroy({ where: { id: req.params.id } }).then(() => {
+        res.redirect("/");
+      }); 
+});
 
   
 module.exports = router;

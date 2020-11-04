@@ -1,14 +1,14 @@
 const users = [
-        {
-            name:"Elham Azizi",
-            username: "eg92448",
-            password: "hello"
-        },
-        {
-            name:"Ramin Madani",
-            username: "ramin",
-            password: "test"
-        }
+    {
+        name: "Elham Azizi",
+        username: "happygirl",
+        password: "pretty",
+      },
+      {
+        name: "Tom Smith",
+        username: "superman",
+        password: "butterfly",
+      }
     ]
     
     module.exports = users;
