@@ -27,8 +27,8 @@ nav .nav-wrapper {
 nav ul a {
     font-size: 25px;
     color: #fff;
-    margin-top: -15px;
     cursor: pointer;
+    margin: -15px 16px 0px 35px;
 }
 ul:not(.browser-default)>li {
     list-style-type: none;
