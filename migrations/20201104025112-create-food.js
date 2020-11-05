@@ -27,7 +27,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       direction: {
-        type: Sequelize.TEXT
+        type: Sequelize.STRING(5000)
       },
       createdAt: {
         allowNull: false,

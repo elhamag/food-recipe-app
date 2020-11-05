@@ -25,7 +25,7 @@ module.exports = (sequelize, DataTypes) => {
     ingredient: DataTypes.STRING,
     cookTime: DataTypes.STRING,
     preparation: DataTypes.STRING,
-    direction: DataTypes.TEXT,
+    direction: DataTypes.STRING(5000),
     userId: DataTypes.INTEGER,
   }, {
     sequelize,
