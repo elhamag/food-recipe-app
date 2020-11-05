@@ -27,7 +27,6 @@ nav .nav-wrapper {
 nav ul a {
     font-size: 25px;
     color: #fff;
-    display: block;
     margin-top: -15px;
     cursor: pointer;
 }
@@ -93,5 +92,8 @@ section {
     position: relative;
     left: 640px;
     border-radius: 15px;
+}
+.nav-item{
+    display: flex;
 }
 
