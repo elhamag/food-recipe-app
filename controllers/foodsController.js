@@ -18,14 +18,14 @@ router.get("/", (req, res) => {
 
 
 //GET ==> show form to the user
-router.get('/new', (req,res) => {
+router.get('/food/new', (req,res) => {
     res.render('new.ejs');
 });
 
 
 
 //GET ==> show route
-router.get("/:id", (req, res) => {
+router.get("/food/:id", (req, res) => {
   Food.findByPk(req.params.id, {
       include : [{
           model: User,
@@ -52,7 +52,7 @@ router.post('/', (req,res) => {
 
 
 //DELETE ==> Single object
-router.delete("/:id", (req, res) => {
+router.delete("/food/:id", (req, res) => {
     Food.destroy({ where: { id: req.params.id } }).then(() => {
       res.redirect("/foods");
     });
@@ -60,7 +60,7 @@ router.delete("/:id", (req, res) => {
 
 
 //EDIT
-router.get("/:id/edit", function (req, res) {
+router.get("/food/:id/edit", function (req, res) {
   Food.findByPk(req.params.id).then((foundFood) => {
     Recipe.findAll().then((allRecipes) => {
       res.render("edit.ejs", {
@@ -73,7 +73,7 @@ router.get("/:id/edit", function (req, res) {
 
 
 //PUT ==> update the data in our model after clicking edit
-router.put("/:id", (req, res) => {
+router.put("/food/:id", (req, res) => {
   Food.update(req.body, {
     where: { id: req.params.id },
     returning: true,
