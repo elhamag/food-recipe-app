@@ -35,6 +35,9 @@ ul:not(.browser-default)>li {
 }
 li {
     text-align: -webkit-match-parent;
+        align-items:center;
+        justify-content: center;
+        margin-bottom: 15px;
 }
 .right{
     float: right;
@@ -80,3 +83,11 @@ body{
         border-radius:25px;
         box-sizing:border-box;
 }
+ul{
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(195px, 1fr));
+  }
+  img{
+    width:70%;
+    height:auto;
+  }
