@@ -7,7 +7,7 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 
 
-app.use("/", require("./controllers/foodsController.js"));
+app.use("/foods", require("./controllers/foodsController.js"));
 app.use("/users", require("./controllers/usersController.js"));
 
 
