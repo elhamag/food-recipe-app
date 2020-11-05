@@ -16,6 +16,16 @@
         Cook Time: <input type="text" name="cookTime" /><br/>
         Preparation: <input type="text" name="preparation" /><br/>
         Img: <input type="text" name="img"/><br/>
+        <br/>
+        
+        <select name="recipe">
+			<% for ( let i = 0; i < recipes.length; i++ ) { let selected = ( i == 0
+			) ? "selected" : ""; %>
+			<option value="<%=recipes[i].id%>" selected > <%=recipes[i].name%></option>
+			<% } %>
+		</select>
+
+        <br/>
         <input type="submit" name="" value="Submit Changes" />
     </form>
 

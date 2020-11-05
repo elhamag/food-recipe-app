@@ -1,10 +1,11 @@
 const express = require('express');
 const router = express.Router();
 
+
 //const foods = require('../foods.js');
 const Food = require('../models').Food;
 const User = require('../models').User;
-
+const Recipe = require("../models").Recipe;
 
 //GET ==> HomePage and user can create a new food recipe
 router.get("/", (req, res) => {
@@ -25,13 +26,18 @@ router.get('/new', (req,res) => {
 
 //GET ==> show route
 router.get("/:id", (req, res) => {
-    Food.findByPk(req.params.id, {
-        include : [User]
-    }).then(food => {
-        res.render('show.ejs', {
-            food: food
-        });
-    });
+  Food.findByPk(req.params.id, {
+      include : [{
+          model: User,
+          attributes: ['name']
+      }],
+  })
+  .then(food => {
+      console.log(food)
+      res.render('show.ejs', {
+          food: food
+      });
+  });
 });
 
 
@@ -45,20 +51,22 @@ router.post('/', (req,res) => {
 
 
 
-// //DELETE ==> Single object
-// router.delete("/:id", (req, res) => {
-//     Food.destroy({ where: { id: req.params.id } }).then(() => {
-//       res.redirect("/foods");
-//     });
-//   });
+//DELETE ==> Single object
+router.delete("/:id", (req, res) => {
+    Food.destroy({ where: { id: req.params.id } }).then(() => {
+      res.redirect("/foods");
+    });
+  });
 
 
 //EDIT
-
 router.get("/:id/edit", function (req, res) {
-  Food.findByPk(req.params.id).then((food) => {
-    res.render("edit.ejs", {
-      food: food,
+  Food.findByPk(req.params.id).then((foundFood) => {
+    Recipe.findAll().then((allRecipes) => {
+      res.render("edit.ejs", {
+        food: foundFood,
+        recipes: allRecipes,
+      });
     });
   });
 });
@@ -69,8 +77,13 @@ router.put("/:id", (req, res) => {
   Food.update(req.body, {
     where: { id: req.params.id },
     returning: true,
-  }).then((food) => {
-    res.redirect("/foods");
+  }).then((updatedFood) => {
+    Recipe.findByPk(req.body.recipe).then((foundRecipe) => {
+      Food.findByPk(req.params.id).then((foundFood) => {
+        foundFood.addRecipe(foundRecipe);
+        res.redirect("/foods");
+      });
+    });
   });
 });
 

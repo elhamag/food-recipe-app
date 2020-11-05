@@ -11,6 +11,11 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       Food.belongsTo(models.User, { foreignKey: "userId" });
+      Food.belongsToMany(models.Recipe, {
+        through: "RecipeFood",
+        foreignKey: "foodId",
+        otherKey: "recipeId",
+      });  
     }
   };
   Food.init({
