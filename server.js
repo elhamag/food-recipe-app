@@ -11,8 +11,8 @@ app.use("/foods", require("./controllers/foodsController.js"));
 app.use("/users", require("./controllers/usersController.js"));
 
 
-app.listen(3000, () => {
-    console.log('listening');
+var port = process.env.PORT || 3000;
+app.listen(port,()=>{
+    console.log("listening");
 });
-
 
