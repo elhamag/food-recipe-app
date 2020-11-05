@@ -28,7 +28,7 @@ nav ul a {
     font-size: 25px;
     color: #fff;
     cursor: pointer;
-    margin: -15px 16px 0px 35px;
+    margin: -15px 16px 0px 120px;
 }
 ul:not(.browser-default)>li {
     list-style-type: none;
@@ -61,6 +61,7 @@ section {
     overflow: auto;
 }
 /* a img{
+        display: flex;
         position: relative;
         width: 25%;
         height: 100%;
@@ -96,4 +97,6 @@ section {
 .nav-item{
     display: flex;
 }
-
+.dispaly{
+    display: flex;
+}
