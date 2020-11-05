@@ -18,14 +18,9 @@
           </ul>
         
       </nav>
-<section>
-    <div class='blocks'>
-    <!-- <h1> Foods page </h1>
-    <nav >
-        <a href="/foods/new">Create a New Persian Food</a>
-    </nav> -->
 
-    <ul>
+    <div class='blocks'>
+    <ul class="foods">
         <% for(let i=0; i<foods.length; i++) {%>
             <li>
                 <a href="/foods/<%=foods[i].id%>"><%= foods[i].name %>
@@ -44,6 +39,5 @@
         <% } %>
     </ul>
     </div>
-</section>
 </body>
 </html>
