@@ -12,6 +12,11 @@ Deployed at https://myfoodappdemoelham.herokuapp.com/users .
 
 ![wireframe](./Wireframe.png)
 
+## User Stories:
+
+User is able to check the persian food recipes w/o logging in or creating an account. User can sign up or log in to the created new reipes and added to main page. 
+
+
 ## Button Interaction:
 
 1. Sign Up: user has to create and account to save he's recipes.
@@ -23,7 +28,10 @@ Deployed at https://myfoodappdemoelham.herokuapp.com/users .
 
 ## App Demo: 
 
-
+![appdemo](./food-app-mainpage.png)
+![appdemo](./food-app-mainpage1.png)
+![appdemo](./food-app-mainpage2.png)
+![appdemo](./food-app-mainpage3.png)
 
 ## Technologies used:
 - MySql
