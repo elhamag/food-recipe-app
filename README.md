@@ -10,7 +10,7 @@ Deployed at https://myfoodappdemoelham.herokuapp.com/users .
 
 ## Wireframe:
 
-![wireframe](wireframe.png)
+![wireframe](./Wireframe.png)
 
 ## Button Interaction:
 
