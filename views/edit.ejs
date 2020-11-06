@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
-    <h1 style= "color: brown" class="users-edit-page"> Modify the Recipe<%= food.name%></h1>
+    <h1 style= "color: brown" class="users-edit-page"> Modify the Recipe for <%= food.name%></h1>
 <div class="edit-background-container">
     <form class="edit-page" action="/foods/<%=food.id%>?_method=PUT" method="POST">
         Name: <input type="text" name="name" />
