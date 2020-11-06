@@ -201,7 +201,7 @@ img{
 }
 .new-page-name{
     text-align: center;
-    margin-top: 70px;
+    margin-top: 45px;
 }
 .new-page-container{
     background-color: lightgrey;
@@ -227,7 +227,7 @@ img{
     font-size: 20px;
     color: white;
     text-align: center;
-    margin: 100px 0px 0px 0px;
+    margin: 75px 0px 0px 0px;
     padding: 15px;
 }
 .footer1{
@@ -254,6 +254,15 @@ img{
     margin: 45px 0px 0px 0px;
     padding: 15px;
 }
+.footer4{
+    background-color: gray;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin: 12px 0px 0px 0px;
+    padding: 15px;
+}
+
 .login-page{
     text-align: center;
     margin-top: 50px;
@@ -326,6 +335,7 @@ img{
     }
     .a-profile-page{
         text-align: center;
+
     }
     .profile-container-page{
     background-color: lightgrey;
@@ -349,7 +359,16 @@ img{
     /* width: 200px; */
 }
 .a-profile-page{
-   text-align: center; 
+   text-align: center;
+   border: 2px solid gray;
+   display: flex;
+   margin: 10px 0px 0px 670px;
+   background-color: white;
+   padding: 5px;
+   width: 230px;
+   border-radius: 10px;
+   color: black;
+   cursor: pointer;   
 }
 .text-profile-page{
     text-align: center;
@@ -365,4 +384,7 @@ img{
     border-radius: 10px;
     color: black;
     cursor: pointer;
+}
+.name-profile-name{
+    margin-left: 350px;
 }

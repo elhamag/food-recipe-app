@@ -20,15 +20,16 @@
   </div>
     <br /><br />
 <h3 class="text-profile-page">Foods added by you:</h3>
+<div class="name-profile-name">
 <% for (let i = 0; i < user.Food.length; i++){ %>
   <li>
-    <a href="/foods/<%=user.Food[i].id%>"><%=user.Food[i].name%></a>
+    <a class="name-profile-name" href="/foods/<%=user.Food[i].id%>"><%=user.Food[i].name%></a>
  </li>
  <br>
 <% } %>
-
+</div>
     <br /><br />
-    <a class="a-profile-page" href="/foods">View All FOODS</a>
+    <a class="a-profile-page" href="/foods">View All Food Recipes</a>
     <footer class="footer">Created by Elham G. Azizi</footer>
   </body>
 </html>
