@@ -125,7 +125,7 @@ userId: 9,
     createdAt: new Date(),
     updatedAt: new Date(),
     userId: 10,
-    }
+    },
 ],
 {}
 );

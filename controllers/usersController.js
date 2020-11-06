@@ -79,7 +79,7 @@ router.get("/login", (req, res) => {
   // DELETE USER
   router.delete('/:id',(req,res)=>{
     User.destroy({ where: { id: req.params.id } }).then(() => {
-        res.redirect("/");
+        res.redirect("/foods");
       }); 
 });
 

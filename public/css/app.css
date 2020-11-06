@@ -65,7 +65,7 @@ body{
 }
 .users-main-page{
     background-color: white;
-    padding: 8px;
+    padding: 6px;
     font-size: 20px;
     width: 150px;
     border-radius: 10px;
@@ -80,7 +80,7 @@ body{
 }
 .users-main-page1{
     background-color: white;
-    padding: 8px;
+    padding: 6px;
     font-size: 20px;
     width: 300px;
     height: 20px;
@@ -136,6 +136,7 @@ input{
     border-radius: 10px;
     border: 2.5px  solid gray;
     margin-left: -30px;
+    cursor: pointer;
 }
 .serving{
     padding: 10px;
@@ -242,7 +243,7 @@ img{
     font-size: 20px;
     color: white;
     text-align: center;
-    margin: 265px 0px 0px 0px;
+    margin: 180px 0px 0px 0px;
     padding: 15px;
 }
 .footer3{
@@ -311,5 +312,57 @@ img{
     }
     .a-show-page{
         display: flex;
-        margin: 30px 0px 0px 450px;
+        margin: 15px 0px 0px 420px;
+        background-color: white;
+        padding: 5px;
+        width: 230px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        text-align: center;
+        color: black;
     }
+    .profile-header{
+        text-align: center;
+    }
+    .a-profile-page{
+        text-align: center;
+    }
+    .profile-container-page{
+    background-color: lightgrey;
+    width: 350px;
+    height: 400px;
+    display: flex;; 
+    margin-left: 640px;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+.profile-input-value{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.profile-input-value1{
+    margin-left: 40px;
+}
+.delete-profile{
+    margin: 283px 50px 0px -235px;
+    /* width: 200px; */
+}
+.a-profile-page{
+   text-align: center; 
+}
+.text-profile-page{
+    text-align: center;
+}
+.a-new-page{
+    text-align: center;
+    border: 2px solid gray;
+    display: flex;
+    margin: 15px 0px 0px 700px;
+    background-color: white;
+    padding: 5px;
+    width: 230px;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+}
