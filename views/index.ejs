@@ -18,7 +18,7 @@
           </ul>
         
       </nav>
-
+      <br><br>
     <div class='blocks'>
     <ul class="foods">
         <% for(let i=0; i<foods.length; i++) {%>
@@ -29,15 +29,16 @@
                 </a>
             </li>
 
+            <a class="main-a" href="/foods/<%=foods[i].id %>/edit">Click to Alter the Recipe (Edit)</a><br>
             <form action="/foods/<%=foods[i].id %>?_method=DELETE" method="POST">
-                <input class="main-delete" type="submit" value="DELETE">
-                <br><br><a class="main-a" href="/foods/<%=foods[i].id %>/edit">Edit</a><br><br>
+                <br><input class="main-delete" type="submit" value="DELETE"><br><br><br><br>
+                
             </form> 
             </div>
-    
-            
+
         <% } %>
     </ul>
     </div>
+    <footer class="footer3">Created by Elham G. Azizi</footer>
 </body>
 </html>

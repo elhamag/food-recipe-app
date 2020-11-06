@@ -28,7 +28,7 @@ nav ul a {
     font-size: 25px;
     color: #fff;
     cursor: pointer;
-    margin: -15px 23px 0px 0px;
+    margin: -15px 50px 0px 73px;
 }
 ul:not(.browser-default)>li {
     list-style-type: none;
@@ -55,37 +55,49 @@ body{
     line-height: 68px; 
     color: #fff;
 }
-
+.main-block1{
+    background-color: rgb(205, 205, 205);
+    height: 300px;
+    width: 300px;
+    border-radius: 15px;
+    display: flex;
+    margin-left: 630px;
+}
 .users-main-page{
     background-color: white;
-    padding: 10px;
+    padding: 8px;
     font-size: 20px;
-    margin-left: 155px;
-    margin-top: 50px;
-    margin-left: 135px;
-    width: 110px;
+    width: 150px;
     border-radius: 10px;
+    border: 2.5px solid rgb(157, 157, 157);
+    height: 20px;
+    flex-direction: column;
+    display: flex;
+    margin: 51px 10px 0px 18px;
+    text-align: center;
+    color: black;
+    
 }
 .users-main-page1{
     background-color: white;
-    padding: 10px;
+    padding: 8px;
     font-size: 20px;
-    margin-left: 155px;
-    margin-top: 50px;
-    margin-left: 90px;
-    width: 200px;
+    width: 300px;
+    height: 20px;
     border-radius: 10px;
+    border: 2px solid rgb(157, 157, 157);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 190px 35px 0px -255px;
+    text-align: center;
+    color: black;
 }
-.main-block1{
-        background-color: rgb(150, 150, 150);
-        height: 400px;
-        width: 400px;
-        border-radius: 15px;
-        display: flex;
-        flex-direction: column;
-        /* justify-content: center;
-        align-items: center; */
-        margin-left: 610px;
+
+.main-block-image{
+    width: 1600px;
+  object-fit: cover; 
+  height: 240px;
 }
 .nav-item{
     display: flex;
@@ -116,12 +128,14 @@ form{
     text-align: center;
 }
 input{
-    background-color: lightcoral;
-    padding: 15px;
+    background-color: white;
+    /* padding: 12px; */
+    width: 250px;
     font-size: 15px;
+    height: 30px;
     border-radius: 10px;
-    border: 2.5px  solid lightgrey;
-
+    border: 2.5px  solid gray;
+    margin-left: -30px;
 }
 .serving{
     padding: 10px;
@@ -143,16 +157,19 @@ img{
     object-fit: contain;
 }
 .main-delete{
-    background-color: rgb(247, 147, 147);
-    padding: 10px;
+    background-color: lightgray;
     font-size: 10px;
-    border: 2px  solid lightgrey;
+    border: 2px  solid grey;
     border-radius: 10px;
     font-size: 14px;
+    text-align: center;
+    
 
 }
 .main-a{
     font-size: 19px;
+    color: rgb(80, 80, 80);
+    margin-left: 25px;
 }
 .main-name{
     font-size: 18px;
@@ -162,23 +179,137 @@ img{
     margin-top: 70px;
 }
 .signup-page{
-        background-color: rgb(150, 150, 150);
+        background-color:lightgray;
         height: 500px;
         width: 400px;
         border-radius: 15px;
         display: flex;
         flex-direction: column;
-        /* justify-content: center;
-        align-items: center; */
         margin-left: 620px;
         margin-top: 30px;
+        border: 2px solid darkgrey;
 }
 .signup-page1{
     padding: 10px;
     font-size: 20px;
-    margin-left: 155px;
     margin-top: 50px;
     margin-left: 100px;
     width: 110px;
     border-radius: 10px;
+    text-align: left;
 }
+.new-page-name{
+    text-align: center;
+    margin-top: 70px;
+}
+.new-page-container{
+    background-color: lightgrey;
+    width: 460px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-left: 580px;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+.new-input-value{
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+.new-input-value1{
+    margin-left: 20px;
+}
+.footer{
+    background-color: gray;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin: 100px 0px 0px 0px;
+    padding: 15px;
+}
+.footer1{
+    background-color: gray;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin: 162px 0px 0px 0px;
+    padding: 15px;
+}
+.footer2{
+    background-color: gray;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin: 265px 0px 0px 0px;
+    padding: 15px;
+}
+.footer3{
+    background-color: gray;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin: 45px 0px 0px 0px;
+    padding: 15px;
+}
+.login-page{
+    text-align: center;
+    margin-top: 50px;
+}
+.login-container-page{
+    background-color: lightgrey;
+    width: 440px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-left: 580px;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+.login-input-value{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.login-input-value1{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.users-edit-page{
+    text-align: center;
+    margin-top: 20px;
+}
+.edit-background-container{
+        background-color: lightgrey;
+        width: 480px;
+        height: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        margin-left: 560px;
+        border: 2px solid gray;
+        border-radius: 10px;
+    }
+    .edit-page{
+            padding: 10px;
+            font-size: 20px;
+            margin-left: -50px;
+            width: 110px;
+            border-radius: 10px;
+            text-align: left;
+    }
+    .edit-page1{
+        font-size: 18px;
+        margin-left: 20px;
+        text-align: center;
+    }
+    .delete-show-page{
+        display: flex;
+        margin: 10px 0px 0px 450px;
+    }
+    .a-show-page{
+        display: flex;
+        margin: 30px 0px 0px 450px;
+    }

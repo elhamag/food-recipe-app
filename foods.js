@@ -9,15 +9,6 @@ const foods = [
           direction:'1- Put the onions into a pot. 2- Lay the chicken pieces on top of the onions. 3- Add some salt and fill the pot with boiling water until it covers the chickens. 4- Put the lid on the pot and let it simmer for 20 Minutes. 5- Take the cooked chicken pieces out of the pot (keep the water in the pot, you will need it in step 19) and slice them in smaller pieces. 5- Bring the soaked rice pot to the boiling and continue simmering until the rice becomes tender. 6- Drain the rice in a colander. 7- Pour 10 oz of plain yogurt in a bowl. 8- Add half of the beaten egg yolks, ground chili pepper and 1 tbsp of the soaked zafran(saffron) to the bowl and mix them together. 9- Add the chicken pieces to the bowl and mix up with the egg yolk mixture. 10- Take another pot and add 2 tbsp vegetable oil. 11- Add the rest of the beaten egg yolks to this pot. 12- Add 2 tbsp of the egg yolk mixture (step 8) to the pot. 13- Add 2 tbsp of the drained rice to the pot. 14- Stir until well mixed. 15- Flat the mixture, take the chicken pieces out of the bowl and put them in the pot on top of the mixture. 16- Add 3 tbsp dried barberries (Zereshk). 17- Add the rest of the rice to the pot. 18- Flat and spread the rice across the pot but dont mix with the mixture. 19- Now take the egg yolks mixture bowl (step 8) add 1/4 vegetable oil, and 2 tbsp of the zafran (saffron), and pour the boiled water (left from the onion and chickens pot) into the bowl until it covers the mixture and mix thoroughly. 20- Back to the rice pot, again put pressure on the rice and press down using a large spoon (as shown in the video 3:13) and pour the rest of the egg yolk mixture on top of the rice. 21- Cover the pot with the lid and let it simmer for 120 minutes over low heat.  ',
     },
     {
-        name:'PLUMS OR PRUNES STEW',
-          img: "https://www.aashpazi.com/dishes/recipes/plums-stew-photo.png",
-          servingSize: '4',
-          ingredient: '1.5 lb (680g) Chicken Thighs, 1 lb (454g) Plums, 1/4 Cup Pomegranate Paste, 1 Onion, Turmeric, Salt, 2 Tbsp Vegetable Oil',
-          cookTime: '60 minuts',
-          preparation: '1- Slice the onions and plums.',
-          direction:'1- Fry the onions in vegetable oil. 2- Stir in turmeric, chicken thighs and salt. 3- Fry the chicken thighs (both sides). 4- Add water, cover the pot and simmer for 20 minutes over medium heat. 5- Stir in pomegranate paste and the plums. 6- Cover the pot and continues simmering for another 20 minutes',
-    },
-    {
         name:'GHORMEH SABZI',
           img: "https://www.aashpazi.com/dishes/recipes/ghormeh%20sabzi.png",
           servingSize: '100g',
@@ -88,7 +79,16 @@ const foods = [
         cookTime: '60 minuts',
         preparation: '1- Dice the onion. 2- Mince the spinach.',
         direction:'1- Fry the dice onion with vegetable oil until golden.2- Stir in turmeric and beef. 3- Fry the beef until becomes brown over medium-low heat. (10 Min) 4- Pour in enough water to cover the beef, Cover the pot and over medium-low heat simmer for an hour. 5- Fry the minced spinach with vegetable oil for 5 minutes. 6- Stir in the fried spinach to the beef stew. 7- Garnish with red pepper and salt as you prefer.8- Stir in dried prunes. 9- Cover the pot with a lid (leave a crack open for steam to evaporate). 10- Over medium-low heat, boil for 30 minutes.',
-    }
+    },
+    {
+        name:'PLUMS OR PRUNES STEW',
+          img: "https://www.aashpazi.com/dishes/recipes/plums-stew-photo.png",
+          servingSize: '4',
+          ingredient: '1.5 lb (680g) Chicken Thighs, 1 lb (454g) Plums, 1/4 Cup Pomegranate Paste, 1 Onion, Turmeric, Salt, 2 Tbsp Vegetable Oil',
+          cookTime: '60 minuts',
+          preparation: '1- Slice the onions and plums.',
+          direction:'1- Fry the onions in vegetable oil. 2- Stir in turmeric, chicken thighs and salt. 3- Fry the chicken thighs (both sides). 4- Add water, cover the pot and simmer for 20 minutes over medium heat. 5- Stir in pomegranate paste and the plums. 6- Cover the pot and continues simmering for another 20 minutes',
+    },
 ];
 
 module.exports = foods;

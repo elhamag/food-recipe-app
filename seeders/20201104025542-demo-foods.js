@@ -17,18 +17,6 @@ updatedAt: new Date(),
 userId: 1,
 },
 {
-name:'PLUMS OR PRUNES STEW',
-img: "https://www.aashpazi.com/dishes/recipes/plums-stew-photo.png",
-servingSize: '4',
-ingredient: '1.5 lb (680g) Chicken Thighs, 1 lb (454g) Plums, 1/4 Cup Pomegranate Paste, 1 Onion, Turmeric, Salt, 2 Tbsp Vegetable Oil',
-cookTime: '60 minuts',
-preparation: '1- Slice the onions and plums.',
-direction:'1- Fry the onions in vegetable oil. 2- Stir in turmeric, chicken thighs and salt. 3- Fry the chicken thighs (both sides). 4- Add water, cover the pot and simmer for 20 minutes over medium heat. 5- Stir in pomegranate paste and the plums. 6- Cover the pot and continues simmering for another 20 minutes',
-createdAt: new Date(),
-updatedAt: new Date(),
-userId: 2,
-},
-{
 name:'GHORMEH SABZI',
 img: "https://www.aashpazi.com/dishes/recipes/ghormeh%20sabzi.png",
 servingSize: '100g',
@@ -38,7 +26,7 @@ preparation: '1- Dice the onion. 2- Dice the garlic cloves. 3- Soak the dried li
 direction:'1- Fry the diced onions and garlics in small pot with 2 tbsp vegetable oil until translucent and golden. 2- Add the chopped beef to the pot, stir and fry along until brown. 3- Add boiling water to the pot until it covers the mixture. 4- Cover the pot with the lid and let it simmer for 60 to 90 minutes. 5- Fry the herbs in pot with 2 tbsp vegetable oil. 6- Add the fried herbs to the beef mixture pot. 7- Add the kidney beans to the pot. 8- Make few holes into the soaked limes and add them to the pot and stir. 9- Now add ground chili pepper, salt, Persian spice mix (Advieh) as preferred. 10- Add 1 tsp tomato paste to the pot and mix thoroughly until well mixed.  11- Cover the pot with the lid and cook for 30 minutes.',
 createdAt: new Date(),
 updatedAt: new Date(),
-userId: 3,
+userId: 2,
 },
 {
 name:'GHALIEH MAHI (fish stew)',
@@ -50,7 +38,7 @@ preparation: '1- Dice the onion. 2- Mince cilantro and fenugreek. 3- Cut the fis
 direction:'1- Fry onions with 2 tbsp vegetable oil until golden. 2- Add stew seasoning, ground chili pepper, continue frying for couple of more minutes. 3- Add minced cilantro and fenugreek, and continue frying until the herbs start becoming dark. 4- Combine half a cup of boiling water with tamarind paste and stir well until the tamarind paste is thoroughly dissolved. 5- Add the tamarind paste to the bowl, stir. Add more boiling water if needed. 6- Add salt as preferred, stirring. 7- Heat the pot over medium heat for 10 minutes. Meanwhile, 8- Rub the sliced fish with turmeric on both sides. 9- Fry the fish in a tbsp of vegetable oil until will fried on both sides. 10- Add the fish to the herbs pot and stir well. 11- Cook for 20 minutes over medium heat. ',
 createdAt: new Date(),
 updatedAt: new Date(),
-userId: 4,
+userId: 3,
 },
 {
 name:'ASH RESHTEH',
@@ -62,6 +50,7 @@ preparation: '1- Dice a medium size onion. 2- Slice 3 medium size onions. 3- Min
 direction:'1- Heat the vegetable oil in a pot over medium heat. 2- Add the diced onion along with two garlic cloves to the pot and fry until translucent. 3- Add the chickpeas, kidney beans, and lentils to the pot. 4- Add salt and turmeric as needed and mix thoroughly and let the mixture fry for few minutes. stir the mixture occasionally. 5- Stir in the minced leak chives, cilantro, dill, parsley and spinach. 6- Pour in boiling water until the mixture is covered. Bring the mixture to a boil than reduce heat to low and simmer for 10 or 15 min. 7- Add the noodles (reshteh) to the pot and continue simmering. 8- In a small pan, heat the oil and fry the sliced onions until golden. 9- Serve the meal in bowl and top it with fried onions and Kashk.',
 createdAt: new Date(),
 updatedAt: new Date(),
+userId: 4,
 },
 {
 name:'MIRZA GHASEMI (eggplant)',
@@ -125,6 +114,18 @@ createdAt: new Date(),
 updatedAt: new Date(),
 userId: 9,
 },
+{
+    name:'PLUMS OR PRUNES STEW',
+    img: "https://www.aashpazi.com/dishes/recipes/plums-stew-photo.png",
+    servingSize: '4',
+    ingredient: '1.5 lb (680g) Chicken Thighs, 1 lb (454g) Plums, 1/4 Cup Pomegranate Paste, 1 Onion, Turmeric, Salt, 2 Tbsp Vegetable Oil',
+    cookTime: '60 minuts',
+    preparation: '1- Slice the onions and plums.',
+    direction:'1- Fry the onions in vegetable oil. 2- Stir in turmeric, chicken thighs and salt. 3- Fry the chicken thighs (both sides). 4- Add water, cover the pot and simmer for 20 minutes over medium heat. 5- Stir in pomegranate paste and the plums. 6- Cover the pot and continues simmering for another 20 minutes',
+    createdAt: new Date(),
+    updatedAt: new Date(),
+    userId: 10,
+    }
 ],
 {}
 );

@@ -7,17 +7,28 @@
     <link rel="stylesheet" href="/css/app.css">
 </head>
     <body>
-        <h1> New Food Recipe Page</h1>
-            <form action="/foods" method="POST">
-                User Id: <input type="text" name="userId" /><br/>
-                Name: <input type="text" name="name" /><br/>
-                Serving Size: <input type="text" name="servingSize" /><br/>
-                Ingredient: <input type="text" name="ingredient" /><br/>
-                Cook Time: <input type="text" name="cookTime" /><br/>
-                Preparation: <input type="text" name="preparation" /><br/>
-                Img: <input type="text" name="img"/><br/>
+        <h1 class= "new-page-name"> Create a New Food Recipe</h1>
+        <div class="new-page-container">   
+            <form class= "new-input-value" action="/foods" method="POST">
+                User Id: <input class="new-input-value1" type="text" name="userId" />
+                <br/><br/>
+                Name: <input class="new-input-value1" type="text" name="name" />
+                <br/><br/>
+                Serving Size: <input class="new-input-value1" type="text" name="servingSize" />
+                <br/><br/>
+                Ingredient: <input class="new-input-value1" type="text" name="ingredient" />
+                <br/><br/>
+                Cook Time: <input class="new-input-value1" type="text" name="cookTime" />
+                <br/><br/>
+                Preparation: <input class="new-input-value1" type="text" name="preparation" />
+                <br/><br/>
+                Img: <input class="new-input-value1" type="text" name="img"/>
+                <br/><br/><br /> <br />
                 <input type="submit" name="" value="SUBMIT" />
-            
+                <br/><br/>
             </form>
+        </div>
+
+        <footer class="footer">Created by Elham G. Azizi</footer>
     </body>
 </html>

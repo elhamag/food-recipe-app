@@ -7,27 +7,33 @@
     <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
-    <h1 style= "color: brown"> Modify the Recipe for <%= food.name%></h1>
-
-    <form action="/foods/<%=food.id%>?_method=PUT" method="POST">
-        Name: <input type="text" name="name" /><br/>
-        Serving Size: <input type="text" name="servingSize" /><br/>
-        Ingredient: <input type="text" name="ingredient" /><br/>
-        Cook Time: <input type="text" name="cookTime" /><br/>
-        Preparation: <input type="text" name="preparation" /><br/>
+    <h1 style= "color: brown" class="users-edit-page"> Modify the Recipe<%= food.name%></h1>
+<div class="edit-background-container">
+    <form class="edit-page" action="/foods/<%=food.id%>?_method=PUT" method="POST">
+        Name: <input type="text" name="name" />
+        <br/><br/>
+        Serving Size: <input type="text" name="servingSize" />
+        <br/><br/>
+        Ingredient: <input type="text" name="ingredient" />
+        <br/><br/>
+        Cook Time: <input type="text" name="cookTime" />
+        <br/><br/>
+        Preparation: <input type="text" name="preparation" />
+        <br/><br/>
         Img: <input type="text" name="img"/><br/>
         <br/>
         
-        <select name="recipe">
+        <select class="edit-page1" name="recipe">
 			<% for ( let i = 0; i < recipes.length; i++ ) { let selected = ( i == 0
 			) ? "selected" : ""; %>
 			<option value="<%=recipes[i].id%>" selected > <%=recipes[i].name%></option>
 			<% } %>
 		</select>
-
+        <br/>
         <br/>
         <input type="submit" name="" value="Submit Changes" />
     </form>
-
+</div>
+    <footer class="footer3">Created by Elham G. Azizi</footer>
 </body>
 </html>

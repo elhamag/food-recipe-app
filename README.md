@@ -12,7 +12,7 @@ Deployed at https://myfoodappdemoelham.herokuapp.com/users .
 
 ![wireframe](wireframe.png)
 
-# Button Interaction:
+## Button Interaction:
 
 1. Sign Up: user has to create and account to save he's recipes.
 2. Log In: User would be able to go back and check the saved recipes.
@@ -20,6 +20,10 @@ Deployed at https://myfoodappdemoelham.herokuapp.com/users .
 4. Edit: modify the recipe with your version.
 5. clicking on the names of the food: Directs to to the recipe of the selected picture. 
 6. Create a New Persion Recipe: Direct the user to new page to create a new recipe. 
+
+## App Demo: 
+
+
 
 ## Technologies used:
 - MySql
