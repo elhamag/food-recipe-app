@@ -7,19 +7,21 @@
     <link rel="stylesheet" href="/css/app.css">
     </head>
 <body>
-    <h1 style= "color: brown">Recipe of <%= food.name%></h1> 
+    <h1 class="show-page-h1" style= "color: brown">Recipe of <%= food.name%></h1> 
 
-    <form action="/foods/<%=food.id %>?_method=DELETE" method="POST">
-        <input type="submit" value="DELETE <%= food.name %>" />
-      </form>
-
-<img src= "<%= food.img %>">
-<p>Serving Size: <%= food.servingSize %></p>
-<p>Ingredient: <%= food.ingredient %></p>
-<p>Cook Time: <%= food.cookTime %></p>
-<p>Preparation: <%= food.preparation%></p>
-<p>Direction: <%= food.direction %></p> 
+<div class= "shows-page">
+<img class="image" src= "<%= food.img %>">
+<p class= "serving">SERVING SIZE: <%= food.servingSize %></p>
+<p>INGREDIENT: <%= food.ingredient %></p>
+<p class= "cook">COOK TIME: <%= food.cookTime %></p>
+<p>PREPRATION: <%= food.preparation%></p>
+<p>DIRECTION: <%= food.direction %></p> 
 <br>
+</div>
+
+<form action="/foods/<%=food.id %>?_method=DELETE" method="POST">
+    <input type="submit" value="DELETE <%= food.name %>" />
+</form>
 
 </body>
 </html>
