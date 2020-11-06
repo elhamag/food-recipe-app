@@ -29,8 +29,11 @@ User is able to check the persian food recipes w/o logging in or creating an acc
 ## App Demo: 
 
 ![appdemo](./food-app-mainpage.png)
+
 ![appdemo](./food-app-mainpage1.png)
+
 ![appdemo](./food-app-mainpage2.png)
+
 ![appdemo](./food-app-mainpage3.png)
 
 ## Technologies used:
